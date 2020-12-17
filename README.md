@@ -1,7 +1,7 @@
 Fala, Galerinha da Lojacorr! rs 
 Obrigado por acreditarem em mim e por me selecionarem para ultima etapa do Processo Seletivo. 
 
-Bom, aqui vai algumas intruções da Prova Técnica que fiz com Laravel 6 junto com Template LTE. Então, é MUITO IMPORTANTE que leiam o arquivo "README.md" até o final. :) 
+Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 6</strong> junto com Template LTE. Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :) 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. 
 
