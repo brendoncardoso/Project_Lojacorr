@@ -5,23 +5,25 @@ Bom, aqui vai algumas intruções da Prova Técnica que fiz com Laravel 6 junto 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. 
 
-1° Passo: Vamos clonar o repositório. 
-Abra o GitBash e cole: git clone https://github.com/brendoncardoso/Project_Lojacorr.git 
+<strong>1° Passo:</strong> Vamos clonar o repositório. 
+Abra o GitBash e cole: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong> 
 
-2° Passo: Instalar o composer no Projeto.
-Cole o código: composer install
+<strong>2° Passo:</strong> Instalar o composer no Projeto.
+Cole o código: <strong>composer install</strong>
 
-3° Passo: Copiar o arquivo "env-example" para "env"
-Cole o código: php -r "copy('.env.example', '.env');"
+<strong>3° Passo:</strong> Copiar o arquivo "env-example" para "env"
+Cole o código: <strong>php -r "copy('.env.example', '.env');"</strong>
 
-4° Passo: Gerar Key do arquivo env.
-Cole o código: php artisan key:generate
+<strong>4° Passo:</strong> Gerar Key do arquivo env.
+Cole o código: <strong>php artisan key:generate</strong>
 
-5° Passo: Configurar o Banco de Dados
-Dentro do arquivo 'env.php' na Linha 12, colar o código: DB_DATABASE=project_lojacorr
-
-<img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" />
+<strong>5° Passo:</strong> Configurar o Banco de Dados
+Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong>
 
 Obs: Podem ficar tranquilos que o Banco de Dados já está dentro do repositório. rs
+
+<p align="center">
+  <img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" />
+</p>
 
 Pronto! Agora o projeto já está configurado. :)
