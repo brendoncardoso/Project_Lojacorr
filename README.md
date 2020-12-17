@@ -27,7 +27,7 @@ Cole o código: <strong>php artisan key:generate</strong>
 <strong>5° Passo:</strong> Configurar o Banco de Dados <br>
 Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong>
 
-Obs: Podem ficar tranquilos que o Banco de Dados já está dentro do repositório.
+<strong>Obs:</strong> Podem ficar tranquilos que o Banco de Dados já está dentro do repositório.
 
 <p align="center">
   <img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" />
