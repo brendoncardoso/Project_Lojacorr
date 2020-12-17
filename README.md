@@ -6,8 +6,8 @@ Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
 
 <p align="center">
-  <span>Mas "<strong>Calma, Eu tô aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :rofl:</span>
-  <img src="https://i.pinimg.com/originals/b0/37/df/b037df079ca328b196300f3a24816e9c.gif" />
+  <img src="https://i.pinimg.com/originals/b0/37/df/b037df079ca328b196300f3a24816e9c.gif" /><br>
+   Mas "<strong>Calma, Eu tô aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :rofl:
 </p>
 
 
