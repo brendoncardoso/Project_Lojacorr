@@ -11,11 +11,7 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
-Route::get('/', 'Site\HomeController@index');
+Route::get('/', 'Admin\HomeController@index');
 
 Route::prefix('/painel')->group(function(){
     Route::get('/', 'Admin\HomeController@index')->name('painel');
@@ -28,8 +24,6 @@ Route::prefix('/painel')->group(function(){
     
     Route::get('/logout', 'Admin\Auth\LoginController@logout');
     Route::post('/logout', 'Admin\Auth\LoginController@logout');
-
-    //Route::get('admin/dashboard', 'Admin\HomeController@index')->name('dashboard');
 
     Route::get('/users', 'Admin\UserController@index')->name('users');
     Route::get('/cadaster/user', 'Admin\UserController@create')->name('cadaster_user');

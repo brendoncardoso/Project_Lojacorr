@@ -14,8 +14,12 @@
             <tr>
                 <th style="width: 10px">#</th>
                 <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
+                <th>Cep</th>
+                <th>Logradouro</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Número</th>
                 <th>Ações</th>
             </tr>
             </thead>
@@ -24,8 +28,12 @@
                 <tr>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
-                    <td>{{$user->email}}</td>
-                    <td>{{$user->telephone}}</td>
+                    <td>{{$user->zip_code}}</td>
+                    <td>{{$user->public_place}}</td>
+                    <td>{{$user->district}}</td>
+                    <td>{{$user->city}}</td>
+                    <td>{{$user->state}}</td>
+                    <td>{{$user->number}}</td>
                     <td class='text-center'>
                         <a href="{{route('edit', $user->id)}}">
                             <button type="button" class="btn btn-info btn-sm"><i class="fas fa-edit"></i></button>

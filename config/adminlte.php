@@ -234,7 +234,7 @@ return [
         [
             'text' => 'Pesquisar',
             'search' => false,
-            'topnav' => true,
+            'topnav' => false,
         ],
         [
             'text' => 'blog',
@@ -248,13 +248,6 @@ return [
             'label_color' => 'success',
         ],
         /*[
-            'text'        => 'Páginas',
-            'url'         => 'painel/admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
-        ],*/
-        [
             'text'        => 'Cadastrar Usuários',
             'url'         => 'painel/cadaster/user',
             'icon'        => 'fa fa-user-plus',
@@ -266,27 +259,24 @@ return [
             'icon'        => 'fa fa-users',
             'label'       =>  '',
             'label_color' => 'success',
-        ],
+        ],*/
         /*['header' => 'account_settings'],*/
         [
-            'text' => 'profile',
-            'url'  => 'painel/settings',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        /*[
-            'text' => 'change_password',
-            'url'  => 'painel/admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+            'text'    => 'Usuários',
+            'icon'    => 'fa fa-users',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Listagem/Editar',
+                    'icon'    => 'fa fa-users',
+                    'url'  => 'painel/users',
+                    'active'  => ['painel/user/edit', 'regex:@^painel/user/edit/[0-9]+$@'],
                 ],
                 [
+                    'text' => 'Cadastrar',
+                    'icon'    => 'fa fa-user-plus',
+                    'url'  => 'painel/cadaster/user',
+                ],
+                /*[
                     'text'    => 'level_one',
                     'url'     => '#',
                     'submenu' => [
@@ -309,13 +299,13 @@ return [
                             ],
                         ],
                     ],
-                ],
-                [
+                ],*/
+                /*[
                     'text' => 'level_one',
                     'url'  => '#',
-                ],
+                ],*/
             ],
-        ],*/
+        ],
         [
             'text' => 'Sair',
             'url'  => 'painel/logout',

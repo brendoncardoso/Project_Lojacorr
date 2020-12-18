@@ -5,8 +5,12 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\State;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Auth;
+
 
 class UserController extends Controller
 {
@@ -37,8 +41,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
-        return view('admin.users.cadaster');
+        $states = State::all();
+        return view('admin.users.cadaster', [
+                'states' => $states
+            ] 
+        );
     }
 
     /**
@@ -48,7 +55,7 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        $campos = $request->only(['email', 'name', 'password', 'password_confirmation']);
+        $campos = $request->only(['email', 'name', 'password', 'password_confirmation', 'zip_code', 'public_place', 'district', 'city', 'state', 'number']);
         $validator = $this->validator($campos);
 
         $email = $request->input('email');
@@ -61,7 +68,12 @@ class UserController extends Controller
                 $user = new User();
                 $user->name = $request->input('name');
                 $user->email = $request->input('email');
-                $user->telephone = $request->input('telephone');
+                $user->zip_code = $request->input('zip_code');
+                $user->public_place = $request->input('public_place');
+                $user->district = $request->input('district');
+                $user->city = $request->input('city');
+                $user->state = $request->input('state');
+                $user->number = $request->input('number');
                 $user->password = Hash::make($request->input('password'));
                 $user->save();
                 return redirect()->route('cadaster_user')->with('success', 'Usuário cadastrado com Sucesso!');
@@ -92,8 +104,12 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
+        $states = State::all();
+
         return view('admin.users.edit', [
-            'user' => $user
+            'user' => $user,
+            'states' => $states,
+            'idLogged' => Auth::user()->id
         ]);
     }
 
@@ -107,12 +123,25 @@ class UserController extends Controller
     public function update(Request $request, $id){
         if(User::find($id)){
             $nome = $request->input('name');
-            $telephone = $request->input('telephone');
+            $email =  $request->input('email');
+            $zip_code =  $request->input('zip_code');
+            $public_place =  $request->input('public_place');
+            $district =  $request->input('district');
+            $city =  $request->input('city');
+            $state =  $request->input('state');
+            $number =  $request->input('number');
+            $password =  $request->input('password');
 
             if(!empty($nome)){
                 $user = User::find($id);
                 $user->name = $nome;
-                $user->telephone = $telephone;
+                $user->email = $email;
+                $user->zip_code = $zip_code;
+                $user->public_place = $public_place;
+                $user->district = $district;
+                $user->city = $city;
+                $user->state = $state;
+                $user->number = $number;
                 $user->save();
                 
                 return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
@@ -153,7 +182,14 @@ class UserController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:500'],
             'email' => ['required', 'string', 'email', 'max:500', 'unique:users'],
+            'zip_code' => ['required', 'string', 'max:9'],
+            'public_place' => ['required', 'string', 'max:500'],
+            'district' => ['required', 'string', 'max:500'],
+            'city' => ['required', 'string', 'max:500'],
+            'state' => ['required', 'string', 'max:2'],
+            'number' => ['required', 'string', 'max:4'],
             'password' => ['required', 'string', 'min:4', 'confirmed'],
+            'password_confirmation' => ['required', 'string', 'min:4'],
         ]);
     }
 }
