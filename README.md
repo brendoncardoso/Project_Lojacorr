@@ -33,3 +33,25 @@ Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <stro
 </p>
 
 Pronto! o projeto já está configurado. :smile:
+
+<br>
+
+Agora falta abrirmos, né?
+
+<p align="center">
+  <img src="https://pa1.narvii.com/6680/822a7ac31feb355f53fef434ef90f9fb0bb19a08_hq.gif" />
+</p>
+
+<strong>Último Passo:</strong> Abrir o projeto <br>
+Cole o código: <strong>php artisan serve</strong> e pressione a tecla <strong>Enter</strong>. <br>
+
+Vamos pegar o link do server(http://127.0.0.1:8000) e colamos na barra de link do seu navagador, aperte <strong>Enter</strong> para Pesquisar. <br>
+
+E então...
+
+<p align="center">
+  <img src="https://giphy.com/gifs/Friends-season-6-episode-606-the-one-on-last-night-JqDeI2yjpSRgdh35oe" />
+</p>
+
+O Projeto está aberto. :smile: 
+
