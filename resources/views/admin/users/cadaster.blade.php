@@ -159,7 +159,10 @@
                                 </div>
                             </div>
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary" style='float:right'>Cadastrar</button>
+                                <div class="" style="float:right">
+                                    <button id="voltar" type="button" class="btn btn-primary"><i class="fas fa-undo"></i> Voltar</button>
+                                    <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Cadastrar</button>
+                                </div>
                             </div>
                         </form>
                     </div>

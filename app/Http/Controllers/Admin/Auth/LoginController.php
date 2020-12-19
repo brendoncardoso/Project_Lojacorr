@@ -53,17 +53,20 @@ class LoginController extends Controller
     public function logar(Request $request){
         $user = $request->only(['email', 'password']);
 
+        $email = $request->input('email');
+        $password = $request->input('password');
+
         $validator = $this->validator($user);
 
         $remember = $request->input('remember', false);
 
-        if($validator->fails()){
+        if($validator->fails() || empty($email) && empty($password)){
             return redirect()->route('login')->withErrors($validator)->withInput();
         }else{
             if(Auth::attempt($user, $remember)){
                 return redirect()->route('painel');
             }else{
-                return redirect()->route('login')->with('warning', 'Email e/ou Senha estão incorretas.');
+                return redirect()->route('login')->with('danger', 'Email e/ou Senha estão incorretas.');
             }
         }
     }

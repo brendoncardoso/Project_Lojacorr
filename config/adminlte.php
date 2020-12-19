@@ -266,15 +266,15 @@ return [
             'icon'    => 'fa fa-users',
             'submenu' => [
                 [
-                    'text' => 'Listagem/Editar',
-                    'icon'    => 'fa fa-users',
-                    'url'  => 'painel/users',
-                    'active'  => ['painel/user/edit', 'regex:@^painel/user/edit/[0-9]+$@'],
-                ],
-                [
                     'text' => 'Cadastrar',
                     'icon'    => 'fa fa-user-plus',
                     'url'  => 'painel/cadaster/user',
+                ],
+                [
+                    'text' => 'Listagem/Editar',
+                    'icon'    => 'fas fa-user-edit',
+                    'url'  => 'painel/users',
+                    'active'  => ['painel/user/edit', 'regex:@^painel/user/edit/[0-9]+$@'],
                 ],
                 /*[
                     'text'    => 'level_one',

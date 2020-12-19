@@ -6,10 +6,12 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\State;
+use App\UserColumn;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Auth;
+use DB;
 
 
 class UserController extends Controller
@@ -18,6 +20,7 @@ class UserController extends Controller
 
     public function __construct(){
         $this->user = new User();
+        $this->middleware('auth');
     }
 
     /**
@@ -28,9 +31,16 @@ class UserController extends Controller
     public function index()
     {
         //
-        $users = User::all();
+        $users = DB::table('users')->paginate(10);
+        $countUsers = User::all()->count();
+        $columns_users = UserColumn::all();
+        $states = State::all();
+
         return view('admin.users.users', [
-            'users' => $users
+            'users' => $users, 
+            'usersColumns' => $columns_users, 
+            'states' => $states,
+            'countUsers' => $countUsers
         ]);
     }
 
@@ -130,21 +140,67 @@ class UserController extends Controller
             $city =  $request->input('city');
             $state =  $request->input('state');
             $number =  $request->input('number');
-            $password =  $request->input('password');
+            $password = Hash::make($request->input('password'));
 
-            if(!empty($nome)){
-                $user = User::find($id);
-                $user->name = $nome;
-                $user->email = $email;
-                $user->zip_code = $zip_code;
-                $user->public_place = $public_place;
-                $user->district = $district;
-                $user->city = $city;
-                $user->state = $state;
-                $user->number = $number;
-                $user->save();
-                
-                return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
+            $verifyEmailExists = User::where('email', $email)->first();
+            
+            if($email == Auth::user()->email){
+                if(!empty($nome)){
+                    $user = User::find($id);
+                    $user->name = $nome;
+                    $user->email = $email;
+                    $user->zip_code = $zip_code;
+                    $user->public_place = $public_place;
+                    $user->district = $district;
+                    $user->city = $city;
+                    $user->state = $state;
+                    $user->number = $number;
+                    if(!empty($request->input('password'))){
+                        $campos = $request->only(['password', 'password_confirmation']);
+                        $validator = $this->validatorPassword($campos);
+                        if($validator->fails()){
+                            return redirect()->route('edit', $id)->withErrors($validator)->withInput();
+                        }else{
+                            $user->password = $password;
+                        }
+                    }
+                    $user->save();
+                    
+                    return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
+                }else{
+                    return redirect()->route('edit', $id)->with('warning', 'O Campo nome está vazio.')->withInput();
+                }
+            }else{
+                $verifyEmailExists = User::where('email', $email)->first();
+                if(!$verifyEmailExists){
+                    if(!empty($nome)){
+                        $user = User::find($id);
+                        $user->name = $nome;
+                        $user->email = $email;
+                        $user->zip_code = $zip_code;
+                        $user->public_place = $public_place;
+                        $user->district = $district;
+                        $user->city = $city;
+                        $user->state = $state;
+                        $user->number = $number;
+                        if(!empty($request->input('password'))){
+                            $campos = $request->only(['password', 'password_confirmation']);
+                            $validator = $this->validatorPassword($campos);
+                            if($validator->fails()){
+                                return redirect()->route('edit', $id)->withErrors($validator)->withInput();
+                            }else{
+                                $user->password = $password;
+                            }
+                        }
+                        $user->save();
+                        
+                        return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
+                    }else{
+                        return redirect()->route('edit', $id)->with('warning', 'O Campo nome está vazio.')->withInput();
+                    }
+                }else{
+                    return redirect()->route('edit', $id)->with('warning', 'O email inserido está em uso.')->withInput();
+                }
             }
         }else{
             return redirect()->route('users');
@@ -157,7 +213,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id){
+    public function destroy($id, Request $request){
         $user = User::find($id);
         if($user){
             User::destroy($id);
@@ -165,10 +221,6 @@ class UserController extends Controller
         }else{
             return redirect()->route('users');
         }
-    }
-
-    public function settings(){
-        return view('admin.settings');
     }
 
     /**
@@ -188,6 +240,14 @@ class UserController extends Controller
             'city' => ['required', 'string', 'max:500'],
             'state' => ['required', 'string', 'max:2'],
             'number' => ['required', 'string', 'max:4'],
+            'password' => ['required', 'string', 'min:4', 'confirmed'],
+            'password_confirmation' => ['required', 'string', 'min:4'],
+        ]);
+    }
+
+    protected function validatorPassword(array $data)
+    {
+        return Validator::make($data, [
             'password' => ['required', 'string', 'min:4', 'confirmed'],
             'password_confirmation' => ['required', 'string', 'min:4'],
         ]);
