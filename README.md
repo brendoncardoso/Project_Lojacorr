@@ -52,5 +52,5 @@ E então...
   <img src="https://media.giphy.com/media/JqDeI2yjpSRgdh35oe/giphy.gif" />
 </p>
 
-O Projeto está aberto. :smile: 
+O projeto apareceu! :smile: 
 
