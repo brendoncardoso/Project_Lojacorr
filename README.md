@@ -60,15 +60,16 @@ O projeto está aberto! :smile:
 <hr>
 
 Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saibam: 
-<ul>
-  <li><strong>Regra de Negócio</strong></li>
-  <p>- AQUI</p>
-</ul>
 
 <ul>
   <li><strong>Procurando CEP</strong></li>
   <p>- Quando o campo <strong>CEP</strong> for totalmente preenchido, será feita uma requisição com a API via getJson. <br>
     Se o CEP for válido, os outros campos serão preenchidos automaticamente. Caso contrário, não será preenchido.</p>
+</ul>
+
+<ul>
+  <li><strong>Regra de Negócio</strong></li>
+  <p>- AQUI</p>
 </ul>
 
 <hr>
