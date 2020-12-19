@@ -4,6 +4,8 @@ Obrigado por acreditarem em mim e por me selecionarem para última etapa do Proc
 Bom, aqui vai algumas intruções do Teste Técnico que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
 Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
+<hr>
+
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
 Vou explicar passo a passo do que precisa ser feito. :wink: <br>
 
