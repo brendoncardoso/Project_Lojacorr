@@ -1,7 +1,7 @@
 Fala, Galera da Lojacorr! <br>
 Obrigado por acreditarem em mim e por me selecionarem para última etapa do Processo Seletivo. 
 
-Bom, aqui vai algumas intruções do Teste Técnico que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
+Bom, aqui vão algumas instruções do Teste Técnico que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
 Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
 <hr>
@@ -59,7 +59,7 @@ O projeto está aberto! :smile:
 
 <hr>
 
-Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saibam: 
+Agora irei contar alguns detalhes que fiz no Teste: 
 
 <ul>
   <li><strong>Procurando CEP</strong></li>
