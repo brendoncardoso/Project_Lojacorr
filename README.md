@@ -15,10 +15,10 @@ Vou explicar passo a passo do que precisa ser feito. :wink: <br>
 Cole o código: <strong>cd c:/xampp/htdocs </strong> e pressione a tecla <strong>Enter</strong>. 
 
 <strong>3° Passo:</strong> Vamos clonar o nosso repositório. <br>
-Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong> e pressione a tecla <strong>Enter</strong>. 
+Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong>, pressione a tecla <strong>Enter</strong> e espere a cópia dos arquivos. 
 
 <strong>4° Passo:</strong> Instalar o composer no Projeto. <br>
-Cole o código: <strong>composer install</strong> e pressione a tecla <strong>Enter</strong>. 
+Cole o código: <strong>composer install</strong>, pressione a tecla <strong>Enter</strong> e espere a instalação até que seja concluída. 
 
 <strong>5° Passo:</strong> Copiar o arquivo "env-example.php" para "env.php" <br>
 Cole o código: <strong>php -r "copy('.env.example', '.env');</strong> e pressione a tecla <strong>Enter</strong>.
