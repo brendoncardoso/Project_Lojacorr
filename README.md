@@ -15,7 +15,7 @@ Vou explicar passo a passo do que precisa ser feito. :wink: <br>
 Cole o código: <strong>cd c:/xampp/htdocs </strong> e pressione a tecla <strong>Enter</strong>. 
 
 <strong>3° Passo:</strong> Vamos clonar o nosso repositório. <br>
-Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong>, pressione a tecla <strong>Enter</strong> e espere a cópia dos arquivos. 
+Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git</strong>, pressione a tecla <strong>Enter</strong> e espere a cópia dos arquivos. 
 
 <strong>4° Passo:</strong> Entrar na pasta do Projeto clonado. <br>
 Cole o código: <strong>cd c:/xampp/htdocs/Project_Lojacorr </strong> e pressione a tecla <strong>Enter</strong>. 
