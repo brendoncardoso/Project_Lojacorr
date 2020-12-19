@@ -1,7 +1,7 @@
 Fala, Galerinha da Lojacorr! rs <br>
 Obrigado por acreditarem em mim e por me selecionarem para última etapa do Processo Seletivo. 
 
-Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
+Bom, aqui vai algumas intruções do Teste Técnico que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
 Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
@@ -59,3 +59,10 @@ E então...
 
 O projeto está aberto! :smile: 
 
+Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saibam: 
+<ul>
+  <li>Regra de Negócio</li>
+</ul>
+<ul>
+  <li>Procurando CEP automáticamente</li>
+</ul>
