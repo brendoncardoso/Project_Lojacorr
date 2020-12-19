@@ -5,10 +5,10 @@ Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 
 Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
+Mas "<strong>Calma, Eu estou aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :wink: <br><br>
 
 <p align="center">
-   Mas "<strong>Calma, Eu tô aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :wink: <br><br>
-  <img src="https://i.pinimg.com/originals/b0/37/df/b037df079ca328b196300f3a24816e9c.gif" />
+  <img src="https://66.media.tumblr.com/48ac9f289e8f85a79fc70f0a0069eec0/tumblr_mwkeviSOlD1sdfgzpo1_400.gif" />
 </p>
 
 <strong>1° Passo:</strong> Vamos clonar o repositório. <br>
