@@ -241,26 +241,13 @@ return [
             'url'  => 'painel/admin/blog',
             'can'  => 'manage-blog',
         ],
+        ['header' => 'Gestão de Usuários'],
         [
             'text'        => 'Dashboard',
             'url'         => 'painel/',
             'icon'        => 'fas fa-tachometer-alt',
             'label_color' => 'success',
         ],
-        /*[
-            'text'        => 'Cadastrar Usuários',
-            'url'         => 'painel/cadaster/user',
-            'icon'        => 'fa fa-user-plus',
-            'label_color' => 'success',
-        ],
-        [
-            'text'        => 'Usuários',
-            'url'         => 'painel/users',
-            'icon'        => 'fa fa-users',
-            'label'       =>  '',
-            'label_color' => 'success',
-        ],*/
-        /*['header' => 'account_settings'],*/
         [
             'text'    => 'Usuários',
             'icon'    => 'fa fa-users',
@@ -276,34 +263,6 @@ return [
                     'url'  => 'painel/users',
                     'active'  => ['painel/user/edit', 'regex:@^painel/user/edit/[0-9]+$@'],
                 ],
-                /*[
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],*/
-                /*[
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],*/
             ],
         ],
         [
@@ -311,22 +270,6 @@ return [
             'url'  => 'painel/logout',
             'icon' => 'fa fa-fw fa-power-off',
         ],
-        /*['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],*/
     ],
 
     /*

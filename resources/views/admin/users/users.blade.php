@@ -17,7 +17,7 @@
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>Nome</th>
-                                <th>Cep</th>
+                                <th>CEP</th>
                                 <th>Logradouro</th>
                                 <th>Bairro</th>
                                 <th>Cidade</th>
