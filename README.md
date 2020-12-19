@@ -64,12 +64,14 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
 <ul>
   <li><strong>Procurando CEP</strong></li>
   <p>- Quando o campo <strong>CEP</strong> for totalmente preenchido, será feita uma requisição com a API via getJson. <br>
-    Se o CEP for válido, os outros campos serão preenchidos automaticamente. Caso contrário, não será preenchido.</p>
+    Se o CEP for válido, os outros campos serão preenchidos automaticamente. Caso contrário, não será preenchido.
+  </p>
 </ul>
 
 <ul>
   <li><strong>Regra de Negócio</strong></li>
-  <p>- AQUI</p>
+  <p>- Na parte de <strong>Editar</strong>, o usuário que estiver logado no sistema <strong>NÃO</strong> poderá alterar email e senha de outros usuários. Caso seja o mesmo usuário, poderá alterar o email e senha.<br>
+  </p>
 </ul>
 
 <hr>
