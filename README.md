@@ -67,7 +67,9 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
   <li>Procurando CEP automáticamente</li>
 </ul>
 
-Bom, é isso e vou ficando por aqui. :smile:
+<hr>
+
+Bom, é isso e vou ficando por aqui. <strong>SÍÍÍÍÍÍÍÍÍ</strong>. :smile:
 <p align="center">
   <img src="https://media.giphy.com/media/20MnK9KSyq5nMTF7AG/giphy.gif" />
 </p>
