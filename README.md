@@ -1,4 +1,4 @@
-Fala, Galerinha da Lojacorr! rs <br>
+Fala, Galera da Lojacorr! rs <br>
 Obrigado por acreditarem em mim e por me selecionarem para última etapa do Processo Seletivo. 
 
 Bom, aqui vai algumas intruções do Teste Técnico que fiz com <strong>Laravel 6</strong> junto com AdminLTE 3. <br>
