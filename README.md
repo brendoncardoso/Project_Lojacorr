@@ -19,10 +19,10 @@ Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Loj
 <strong>3° Passo:</strong> Instalar o composer no Projeto. <br>
 Cole o código: <strong>composer install</strong> e pressione a tecla <strong>Enter</strong>. 
 
-<strong>4° Passo:</strong> Copiar o arquivo "env-example" para "env" <br>
+<strong>4° Passo:</strong> Copiar o arquivo "env-example.php" para "env.php" <br>
 Cole o código: <strong>php -r "copy('.env.example', '.env');</strong> e pressione a tecla <strong>Enter</strong>.
 
-<strong>5 Passo:</strong> Gerar Key do arquivo env. <br>
+<strong>5 Passo:</strong> Gerar Key para o arquivo env.php <br>
 Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong>.
 
 <strong>6° Passo:</strong> Configurar o Banco de Dados <br>
