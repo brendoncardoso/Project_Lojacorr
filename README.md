@@ -32,7 +32,7 @@ Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <stro
 <strong>Obs:</strong> Podem ficar tranquilos que o Banco de Dados já está dentro desse repositório.
 
 <p align="center">
-  <img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" style='max-width: 40%!important'/>
+  <img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" width="40%"/>
 </p>
 
 Pronto! o projeto já está configurado. :smile:
@@ -40,7 +40,7 @@ Pronto! o projeto já está configurado. :smile:
 Agora falta abrirmos, né?
 
 <p align="center">
-  <img src="https://pa1.narvii.com/6680/822a7ac31feb355f53fef434ef90f9fb0bb19a08_hq.gif" style='max-width:: 40%!important'/>
+  <img src="https://pa1.narvii.com/6680/822a7ac31feb355f53fef434ef90f9fb0bb19a08_hq.gif" width="40%"/>
 </p>
 
 <strong>Último Passo:</strong> Abrir o projeto. <br>
@@ -52,7 +52,7 @@ Aperte <strong>Enter</strong> para pesquisar. <br>
 E então...
 
 <p align="center">
-  <img src="https://media.giphy.com/media/JqDeI2yjpSRgdh35oe/giphy.gif" style='max-width: 40%!important'/>
+  <img src="https://media.giphy.com/media/JqDeI2yjpSRgdh35oe/giphy.gif" width="40%"/>
 </p>
 
 O projeto está aberto! :smile: 
