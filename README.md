@@ -24,7 +24,7 @@ Cole o código: <strong>cd c:/xampp/htdocs/Project_Lojacorr </strong> e pression
 Cole o código: <strong>composer install</strong>, pressione a tecla <strong>Enter</strong> e espere a instalação até que seja concluída. 
 
 <strong>6° Passo:</strong> Copiar o arquivo "env-example.php" para "env.php" <br>
-Cole o código: <strong>php -r "copy('.env.example', '.env');</strong> e pressione a tecla <strong>Enter</strong>.
+Cole o código: <strong>php -r "copy('.env.example', '.env');"</strong> e pressione a tecla <strong>Enter</strong>.
 
 <strong>7 Passo:</strong> Gerar Key para o arquivo env.php <br>
 Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong>.
