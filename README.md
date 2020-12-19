@@ -46,7 +46,7 @@ Agora falta abrirmos, né?
 <strong>Último Passo:</strong> Abrir o projeto. <br>
 Cole o código: <strong>php artisan serve</strong> e pressione a tecla <strong>Enter</strong>. <br>
 
-Vamos <strong>copiar</strong> o link do server que foi gerado (http://127.0.0.1:8000) e <strong>colar</strong> na barra do nosso navagador. <br>
+Vamos <strong>copiar</strong> o link do server que foi gerado (http://127.0.0.1:8000) e <strong>colar</strong> na barra do nosso navegador. <br>
 Aperte <strong>Enter</strong> para pesquisar. <br>
 
 E então...
@@ -59,7 +59,7 @@ O projeto está aberto! :smile:
 
 <hr>
 
-Agora irei contar alguns detalhes que fiz no Teste: 
+Agora irei contar alguns detalhes que fiz no teste: 
 
 <ul>
   <li><strong>Procurando CEP</strong></li>
