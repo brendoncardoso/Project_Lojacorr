@@ -70,7 +70,7 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
 
 <ul>
   <li><strong>Regra de Negócio</strong></li>
-  <p>- Na parte de <strong>Editar</strong>, o usuário que estiver logado no sistema <strong>NÃO</strong> poderá alterar email e senha de outros usuários. Caso seja o mesmo usuário, poderá alterar o email e senha.<br>
+  <p>- Na parte de <strong>Editar</strong>, o usuário que estiver logado no sistema <strong>NÃO</strong> poderá alterar o email e senha de outros usuários. Caso seja o mesmo, poderá alterar o email e senha.<br>
   </p>
 </ul>
 
