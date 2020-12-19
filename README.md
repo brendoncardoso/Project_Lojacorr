@@ -62,7 +62,9 @@ O projeto está aberto! :smile:
 Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saibam: 
 <ul>
   <li>Regra de Negócio</li>
+  <p>AQUI</p>
 </ul>
+<p>OU AQUI</p> <br>
 <ul>
   <li>Procurando CEP automáticamente</li>
 </ul>
