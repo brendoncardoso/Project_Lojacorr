@@ -34,8 +34,6 @@ Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <stro
 
 Pronto! o projeto já está configurado. :smile:
 
-<br>
-
 Agora falta abrirmos, né?
 
 <p align="center">
@@ -45,7 +43,8 @@ Agora falta abrirmos, né?
 <strong>Último Passo:</strong> Abrir o projeto <br>
 Cole o código: <strong>php artisan serve</strong> e pressione a tecla <strong>Enter</strong>. <br>
 
-Vamos pegar o link do server(http://127.0.0.1:8000) e colamos na barra de link do seu navagador, aperte <strong>Enter</strong> para Pesquisar. <br>
+Vamos <strong>copiar</strong> o link do server (http://127.0.0.1:8000) e <strong>colar</strong> na barra de link do seu navagador. <br>
+Aperte <strong>Enter</strong> para pesquisar. <br>
 
 E então...
 
