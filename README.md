@@ -13,19 +13,19 @@ Vamos lá! Antes de executar, é necessário fazer as configurações para o pro
 
 
 <strong>1° Passo:</strong> Vamos clonar o repositório. <br>
-Abra o Gitbash e cole: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong> e pressione a tecla <strong>Enter</strong> 
+Abra o Gitbash e cole: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong> e pressione a tecla <strong>Enter</strong>. 
 
 <strong>2° Passo:</strong> Instalar o composer no Projeto. <br>
-Cole o código: <strong>composer install</strong> e pressione a tecla <strong>Enter</strong> 
+Cole o código: <strong>composer install</strong> e pressione a tecla <strong>Enter</strong>. 
 
 <strong>3° Passo:</strong> Copiar o arquivo "env-example" para "env" <br>
-Cole o código: <strong>php -r "copy('.env.example', '.env');"</strong> e pressione a tecla <strong>Enter</strong> 
+Cole o código: <strong>php -r "copy('.env.example', '.env');"</strong> e pressione a tecla <strong>Enter</strong>.
 
 <strong>4° Passo:</strong> Gerar Key do arquivo env. <br>
-Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong> 
+Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong>.
 
 <strong>5° Passo:</strong> Configurar o Banco de Dados <br>
-Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong> 
+Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong>.
 
 <strong>Obs:</strong> Podem ficar tranquilos que o Banco de Dados já está dentro do repositório.
 
