@@ -5,7 +5,7 @@ Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 
 Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
-Mas "<strong>Calma, Eu estou aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :wink: <br><br>
+Mas "<strong>Calma, Eu estou aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :wink: <br>
 
 <p align="center">
   <img src="https://66.media.tumblr.com/48ac9f289e8f85a79fc70f0a0069eec0/tumblr_mwkeviSOlD1sdfgzpo1_400.gif" />
