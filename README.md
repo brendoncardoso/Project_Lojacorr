@@ -80,5 +80,5 @@ Se tiverem dúvida, podem entrar em contato comigo que explicarei melhor. <br>
 
 Bom, é isso e vou ficando por aqui. :smile:
 <p align="center">
-  <img src="https://media.giphy.com/media/20MnK9KSyq5nMTF7AG/giphy.gif" style='max-width: 50%!important'/>
+  <img src="https://media.giphy.com/media/20MnK9KSyq5nMTF7AG/giphy.gif" width="50%"/>
 </p>
