@@ -1,12 +1,12 @@
 Fala, Galerinha da Lojacorr! rs <br>
 Obrigado por acreditarem em mim e por me selecionarem para ultima etapa do Processo Seletivo. 
 
-Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 6</strong> junto com Template LTE. Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :) 
+Bom, aqui vai algumas intruções da Prova Técnica que fiz com <strong>Laravel 6</strong> junto com Template LTE. Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até o final. :smile: 
 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
 
 <p align="center">
-   Mas "<strong>Calma, Eu tô aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :rofl: <br><br>
+   Mas "<strong>Calma, Eu tô aqui</strong>" e vou explicar passo a passo do que precisa ser feito. :wink: <br><br>
   <img src="https://i.pinimg.com/originals/b0/37/df/b037df079ca328b196300f3a24816e9c.gif" />
   
 </p>
@@ -33,4 +33,4 @@ Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <stro
   <img src="https://i.pinimg.com/originals/b4/d0/bc/b4d0bc7a0a9a9d6f34274e7be5eabfe1.gif" />
 </p>
 
-Pronto! Agora o projeto já está configurado. :)
+Pronto! Agora o projeto já está configurado. :smile:
