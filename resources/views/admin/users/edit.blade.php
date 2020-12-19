@@ -145,7 +145,7 @@
 
                                 @if($idLogged == $user->id)
                                     <div class="form-group">
-                                        <label for="">Nova Senha*</label>
+                                        <label for="">Nova Senha</label>
                                         <input type="password" name="password" class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}" id="password" placeholder="****" value="">
                                         @if($errors->has('password'))
                                             <div class="invalid-feedback">
@@ -154,7 +154,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Confirmar Senha*</label>
+                                        <label for="">Confirmar Senha</label>
                                         <input type="password" name="password_confirmation" class="form-control {{ $errors->has('password_confirmation') ? 'is-invalid' : '' }}" id="password_confirmation" placeholder="****" value="">
                                         @if($errors->has('password_confirmation'))
                                             <div class="invalid-feedback">
