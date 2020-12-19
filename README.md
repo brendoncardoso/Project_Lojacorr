@@ -50,7 +50,7 @@ Vamos pegar o link do server(http://127.0.0.1:8000) e colamos na barra de link d
 E então...
 
 <p align="center">
-  <img src="https://giphy.com/gifs/Friends-season-6-episode-606-the-one-on-last-night-JqDeI2yjpSRgdh35oe" />
+  <img src="https://media.giphy.com/media/JqDeI2yjpSRgdh35oe/giphy.gif" />
 </p>
 
 O Projeto está aberto. :smile: 
