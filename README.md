@@ -69,5 +69,5 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
 
 Bom, é isso e vou ficando por aqui. :smile:
 <p align="center">
-  <img src="https://giphy.com/gifs/juventusfc-20MnK9KSyq5nMTF7AG" />
+  <img src="https://media.giphy.com/media/20MnK9KSyq5nMTF7AG/giphy.gif" />
 </p>
