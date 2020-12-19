@@ -13,7 +13,7 @@ Mas "<strong>Calma, Eu estou aqui</strong>" e vou explicar passo a passo do que 
 
 <strong>1° Passo:</strong> Abrir o Gitbash. <br>
 
-<strong>2° Passo:</strong> Vamos clonar o repositório. <br>
+<strong>2° Passo:</strong> Vamos clonar o nosso repositório. <br>
 Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git </strong> e pressione a tecla <strong>Enter</strong>. 
 
 <strong>3° Passo:</strong> Instalar o composer no Projeto. <br>
