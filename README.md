@@ -25,7 +25,7 @@ Cole o código: <strong>php -r "copy('.env.example', '.env');</strong> e pressio
 <strong>5 Passo:</strong> Gerar Key para o arquivo env.php <br>
 Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong>.
 
-<strong>6° Passo:</strong> Configurar o Banco de Dados <br>
+<strong>6° Passo:</strong> Configurar o Banco de Dados. <br>
 Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong>.
 
 <strong>Obs:</strong> Podem ficar tranquilos que o Banco de Dados já está dentro desse repositório.
@@ -45,7 +45,7 @@ Agora falta abrirmos, né?
 <strong>Último Passo:</strong> Abrir o projeto. <br>
 Cole o código: <strong>php artisan serve</strong> e pressione a tecla <strong>Enter</strong>. <br>
 
-Vamos <strong>copiar</strong> o link do server (http://127.0.0.1:8000) e <strong>colar</strong> na barra do seu navagador. <br>
+Vamos <strong>copiar</strong> o link do server que foi gerado (http://127.0.0.1:8000) e <strong>colar</strong> na barra do nosso navagador. <br>
 Aperte <strong>Enter</strong> para pesquisar. <br>
 
 E então...
