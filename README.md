@@ -59,6 +59,8 @@ E então...
 
 O projeto está aberto! :smile: 
 
+<hr>
+
 Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saibam: 
 <ul>
   <li>Regra de Negócio</li>
@@ -69,7 +71,7 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
 
 <hr>
 
-Bom, é isso e vou ficando por aqui. <strong>SÍÍÍÍÍÍÍÍÍ</strong>. :smile:
+Bom, é isso e vou ficando por aqui. <strong>SÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ</strong>. :smile:
 <p align="center">
   <img src="https://media.giphy.com/media/20MnK9KSyq5nMTF7AG/giphy.gif" />
 </p>
