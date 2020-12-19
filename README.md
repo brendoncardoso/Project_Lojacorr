@@ -66,3 +66,8 @@ Agora irei contar alguns detalhes que fiz no Teste e que talvez vocês não saib
 <ul>
   <li>Procurando CEP automáticamente</li>
 </ul>
+
+Bom, é isso e vou ficando por aqui. :smile:
+<p align="center">
+  <img src="https://giphy.com/gifs/juventusfc-20MnK9KSyq5nMTF7AG" />
+</p>
