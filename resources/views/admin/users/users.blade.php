@@ -2,6 +2,16 @@
 
 @section('title', 'Usuários')
 
+@section('css')
+    <style>
+        .loggedUser {
+            font-size: 9px;
+            display: inline;
+            margin-right: 5px;
+        }
+    </style>
+@endsection
+
 @section('content')
     <div class="card">
         <div class="card-header">
@@ -15,23 +25,29 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th style="width: 10px">#</th>
+                                <th class='text-center' style="width: 10px">#</th>
                                 <th>Nome</th>
-                                <th>CEP</th>
+                                <th class='text-center'>CEP</th>
                                 <th>Logradouro</th>
                                 <th>Bairro</th>
                                 <th>Cidade</th>
                                 <th>Estado</th>
                                 <th>Número</th>
-                                <th>Ações</th>
+                                <th class='text-center'>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach($users as $user)
                                 <tr>
-                                    <td>{{$user->id}}</td>
+                                    @if(Auth::user()->id == $user->id)
+                                        <td>
+                                            <i class="fa fa-circle text-success loggedUser"></i>{{$user->id}}
+                                        </td>
+                                    @else
+                                        <td class='text-center'>{{$user->id}}</td>
+                                    @endif
                                     <td>{{$user->name}}</td>
-                                    <td>{{$user->zip_code}}</td>
+                                    <td class='text-center'>{{$user->zip_code}}</td>
                                     <td>{{$user->public_place}}</td>
                                     <td>{{$user->district}}</td>
                                     <td>{{$user->city}}</td>

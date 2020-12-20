@@ -31,7 +31,7 @@ class UserController extends Controller
     public function index()
     {
         //
-        $users = DB::table('users')->paginate(10);
+        $users = DB::table('users')->orderByRaw("id < ". Auth::user()->id)->paginate(10);
         $countUsers = User::all()->count();
         $columns_users = UserColumn::all();
         $states = State::all();
@@ -144,39 +144,69 @@ class UserController extends Controller
 
             $verifyEmailExists = User::where('email', $email)->first();
             
-            if($email == Auth::user()->email){
-                if(!empty($nome)){
-                    $user = User::find($id);
-                    $user->name = $nome;
-                    $user->email = $email;
-                    $user->zip_code = $zip_code;
-                    $user->public_place = $public_place;
-                    $user->district = $district;
-                    $user->city = $city;
-                    $user->state = $state;
-                    $user->number = $number;
-                    if(!empty($request->input('password'))){
-                        $campos = $request->only(['password', 'password_confirmation']);
-                        $validator = $this->validatorPassword($campos);
-                        if($validator->fails()){
-                            return redirect()->route('edit', $id)->withErrors($validator)->withInput();
-                        }else{
-                            $user->password = $password;
-                        }
-                    }
-                    $user->save();
-                    
-                    return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
-                }else{
-                    return redirect()->route('edit', $id)->with('warning', 'O Campo nome está vazio.')->withInput();
-                }
-            }else{
-                $verifyEmailExists = User::where('email', $email)->first();
-                if(!$verifyEmailExists){
+            if(User::find($id)->email == Auth::user()->email){
+                if($email == User::find($id)->email){
                     if(!empty($nome)){
                         $user = User::find($id);
                         $user->name = $nome;
                         $user->email = $email;
+                        $user->zip_code = $zip_code;
+                        $user->public_place = $public_place;
+                        $user->district = $district;
+                        $user->city = $city;
+                        $user->state = $state;
+                        $user->number = $number;
+                        if(!empty($request->input('password'))){
+                            $campos = $request->only(['password', 'password_confirmation']);
+                            $validator = $this->validatorPassword($campos);
+                            if($validator->fails()){
+                                return redirect()->route('edit', $id)->withErrors($validator)->withInput();
+                            }else{
+                                $user->password = $password;
+                            }
+                        }
+                        $user->save();
+                        
+                        return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
+                    }else{
+                        return redirect()->route('edit', $id)->with('warning', 'O Campo nome está vazio.')->withInput();
+                    }
+                }else{
+                    if(!$verifyEmailExists){
+                        if(!empty($nome)){
+                            $user = User::find($id);
+                            $user->name = $nome;
+                            $user->email = $email;
+                            $user->zip_code = $zip_code;
+                            $user->public_place = $public_place;
+                            $user->district = $district;
+                            $user->city = $city;
+                            $user->state = $state;
+                            $user->number = $number;
+                            if(!empty($request->input('password'))){
+                                $campos = $request->only(['password', 'password_confirmation']);
+                                $validator = $this->validatorPassword($campos);
+                                if($validator->fails()){
+                                    return redirect()->route('edit', $id)->withErrors($validator)->withInput();
+                                }else{
+                                    $user->password = $password;
+                                }
+                            }
+                            $user->save();
+                            
+                            return redirect()->route('edit', $id)->with('success', 'Usuário alterado com Sucesso!');
+                        }else{
+                            return redirect()->route('edit', $id)->with('warning', 'O Campo nome está vazio.')->withInput();
+                        }
+                    }else{
+                        return redirect()->route('edit', $id)->with('warning', 'O email inserido está em uso.')->withInput();
+                    }
+                }
+            }else{
+                if(!$verifyEmailExists){
+                    if(!empty($nome)){
+                        $user = User::find($id);
+                        $user->name = $nome;
                         $user->zip_code = $zip_code;
                         $user->public_place = $public_place;
                         $user->district = $district;
