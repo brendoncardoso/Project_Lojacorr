@@ -9,27 +9,27 @@ Então, é MUITO IMPORTANTE que leiam o arquivo <strong>README.md</strong> até 
 Vamos lá! Antes de executar, é necessário fazer as configurações para o projeto funcionar. <br>
 Vou explicar passo a passo do que precisa ser feito. :wink: <br>
 
-<strong>1° Passo:</strong> Abrir o Gitbash. <br>
+<strong>1º Passo:</strong> Abrir o Gitbash. <br>
 
-<strong>2° Passo:</strong> Entrar na Pasta <strong>htdocs</strong>. <br>
+<strong>2º Passo:</strong> Entrar na Pasta <strong>htdocs</strong>. <br>
 Cole o código: <strong>cd c:/xampp/htdocs </strong> e pressione a tecla <strong>Enter</strong>. 
 
-<strong>3° Passo:</strong> Vamos clonar o nosso repositório. <br>
+<strong>3º Passo:</strong> Vamos clonar o nosso repositório. <br>
 Cole o código: <strong> git clone https://github.com/brendoncardoso/Project_Lojacorr.git</strong>, pressione a tecla <strong>Enter</strong> e espere a cópia dos arquivos. 
 
-<strong>4° Passo:</strong> Entrar na pasta do Projeto clonado. <br>
+<strong>4º Passo:</strong> Entrar na pasta do Projeto clonado. <br>
 Cole o código: <strong>cd c:/xampp/htdocs/Project_Lojacorr </strong> e pressione a tecla <strong>Enter</strong>. 
 
-<strong>5° Passo:</strong> Instalar o composer no Projeto. <br>
+<strong>5º Passo:</strong> Instalar o composer no Projeto. <br>
 Cole o código: <strong>composer install</strong>, pressione a tecla <strong>Enter</strong> e espere a instalação até que seja concluída. 
 
-<strong>6° Passo:</strong> Copiar o arquivo "env-example.php" para "env.php" <br>
+<strong>6º Passo:</strong> Copiar o arquivo "env-example.php" para "env.php" <br>
 Cole o código: <strong>php -r "copy('.env.example', '.env');"</strong> e pressione a tecla <strong>Enter</strong>.
 
-<strong>7 Passo:</strong> Gerar Key para o arquivo env.php <br>
+<strong>7º Passo:</strong> Gerar Key para o arquivo env.php <br>
 Cole o código: <strong>php artisan key:generate</strong> e pressione a tecla <strong>Enter</strong>.
 
-<strong>8° Passo:</strong> Configurar o Banco de Dados. <br>
+<strong>8º Passo:</strong> Configurar o Banco de Dados. <br>
 Dentro do arquivo 'env.php' na <strong>Linha 12</strong>, colar o código: <strong>DB_DATABASE=project_lojacorr</strong>.
 
 <strong>Obs:</strong> Podem ficar tranquilos que o Banco de Dados já está dentro desse repositório.
