@@ -253,7 +253,7 @@ return [
             'icon'    => 'fa fa-users',
             'submenu' => [
                 [
-                    'text' => 'Cadastrar',
+                    'text' => 'Adicionar',
                     'icon'    => 'fa fa-user-plus',
                     'url'  => 'painel/cadaster/user',
                 ],
